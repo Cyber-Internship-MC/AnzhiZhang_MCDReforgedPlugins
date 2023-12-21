@@ -615,9 +615,9 @@ def mc_command_handle(
         if user_id in data.keys():
             # 管理员提示为绿色ID
             if user_id in config.admins:
-                server.say(f"§7[QQ] §a<{data[user_id]}>§7 {event.content[4:]}")
+                server.say(f"§7[QQ] §a<{data[user_id]}>§f {event.content[4:]}")
             else:
-                server.say(f"§7[QQ] <{data[user_id]}> {event.content[4:]}")
+                server.say(f"§7[QQ] §f<{data[user_id]}> {event.content[4:]}")
         else:
             reply_with_server_name(
                 event,
